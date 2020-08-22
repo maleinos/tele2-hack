@@ -7,4 +7,3 @@ CREATE TABLE IF NOT EXISTS records
     path             VARCHAR(500),
     text             VARCHAR(500)
 );
-//

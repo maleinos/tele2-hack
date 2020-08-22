@@ -5,6 +5,6 @@ services:
     ports:
       - '15808:5432'
     environment:
-      POSTGRES_DB: sber_hack
-      POSTGRES_USER: sber_hack
-      POSTGRES_PASSWORD: sber_hack
+      POSTGRES_DB: tele2_hack
+      POSTGRES_USER: tele2_hack
+      POSTGRES_PASSWORD: tele2_hack
