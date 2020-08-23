@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import javafx.util.Pair;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.tuple.MutablePair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -39,11 +39,11 @@ public class TariffComponentService {
                 .map(component -> {
                     long count = findMatching(component, rawStr).size();
 
-                    return new Pair<>(component, count);
+                    return new MutablePair<TariffComponent, Long>(component, count);
                 })
-                .filter(pair -> pair.getValue() > 0)
-                .max(Comparator.comparingLong(Pair::getValue))
-                .map(Pair::getKey);
+                .filter(pair -> pair.right > 0)
+                .max(Comparator.comparingLong(MutablePair::getRight))
+                .map(MutablePair::getLeft);
     }
 
     private List<String> findMatching(TariffComponent component, String rawStr) {
