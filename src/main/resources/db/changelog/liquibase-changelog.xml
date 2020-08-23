@@ -4,9 +4,8 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
 
-    <include file="migrations/2020-08-01-create-task-table.sql" relativeToChangelogFile="true"/>
-    <include file="migrations/2020-08-01-create-task-record-table.sql" relativeToChangelogFile="true"/>
-    <include file="migrations/2020-08-01-create-records-table.sql" relativeToChangelogFile="true"/>
-    <include file="migrations/2020-08-02-add-audio-file-path.sql" relativeToChangelogFile="true"/>
+    <include file="migrations/2020-08-22-create-tariff-table.sql" relativeToChangelogFile="true"/>
+    <include file="migrations/2020-08-22-create-tariff-component-table.sql" relativeToChangelogFile="true"/>
+    <include file="migrations/2020-08-22-insert-tariff-components.sql" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>
