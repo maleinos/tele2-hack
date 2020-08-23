@@ -37,10 +37,6 @@ public enum TariffComponentType {
     MORE_SERVICES,
 
     /**
-     * Больше услуг.
-     */
-
-    /**
      * Пакет SMS.
      */
     PACKAGE_SMS
